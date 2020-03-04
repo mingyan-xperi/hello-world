@@ -17,5 +17,5 @@ jobs:
     - name: Test built app
       run: |
         cd Build_CI
-        cd Release
-        main
+        ls -al
+
