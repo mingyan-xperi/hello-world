@@ -9,13 +9,13 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Configue CMake
-      run: 
+      run: |
         mkdir Build_CI
         cmake . -BBuild_CI -DARCH=64 -DCMAKE_BUILD_TYPE=Release
     - name: Build "Release" binaries
       run: cmake --build Build_CI --config Release
     - name: Test built app
-      run:
+      run: |
         cd Build_CI
         cd Release
         main
