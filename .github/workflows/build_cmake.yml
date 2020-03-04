@@ -18,4 +18,5 @@ jobs:
       run: |
         cd Build_CI
         ls -al
+        main
 
